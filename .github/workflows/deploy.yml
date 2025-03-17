@@ -36,5 +36,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.AWS_KEY }}
           script: |
+            sudo timedatectl set-timezone Asia/Seoul
             docker pull ${{ secrets.DOCKER_USER_NAME }}/${{ secrets.DOCKER_IMAGE_NAME }}-be
             docker-compose up -d
