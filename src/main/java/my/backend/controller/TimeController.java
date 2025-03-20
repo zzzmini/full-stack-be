@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "*", allowedHeaders = "*")
+//@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class TimeController {
     @GetMapping("/time")
     public String getCurrentTime() {
