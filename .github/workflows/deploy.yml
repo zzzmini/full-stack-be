@@ -18,7 +18,7 @@ jobs:
       - name: application.properties 덮어쓰기
         run: |
           cd ./src/main/resources
-          touch ./application.properties
+          touch ./application.yml
           echo "${{ secrets.PROPERTIES }}" > ./application.yml
         shell: bash
       - name: Gradle Wrapper 실행 권한 추가
